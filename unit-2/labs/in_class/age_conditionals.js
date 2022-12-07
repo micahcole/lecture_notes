@@ -126,3 +126,4 @@ let numTwo = 2;
 ((numOne + numTwo) > 1) ? (numOne + numTwo) : 0;
 
 console.log(value);
+
