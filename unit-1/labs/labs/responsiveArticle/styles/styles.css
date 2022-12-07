@@ -1,57 +1,59 @@
 header{
-    text-align: center;
-    background-color: lightgray;
-    font-size: xx-large;
-    padding: 6%;
-    margin-bottom: 2vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  
-  nav{
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    background-color: lightgray;
-    padding: 1%;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-
-#gridContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: lightgray;
+  font-size: xx-large;
+  padding: 6%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 4%;
+  margin-top: 4%;
 }
-  
-  #catImage{
-    display: flex;
-    justify-content: center;
-    width: auto;
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: lightgray;
+  padding: 1%;
+}
+
+#catImage{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+}
+
+#artHead{
+  text-align: center;
+  background-color: lightgray;
+  font-size: x-large;
+  padding: 1%;
+}
+
+.articleItem{
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  background-color: lightgray;
+  font-size: large;
+}
+
+
+@media screen and (min-width: 600px) {
+  #bigGrid{
     height: 100%;
-    margin-top: 3vh;
-    grid-area: 1, 1 / 2, 3;
-  }
-  
-  #artHead{
-    text-align: center;
-    background-color: lightgray;
-    font-size: x-large;
-    padding: 1%;
-  }
-  #articles{
-    grid-area: 1, 3 / 3, 3;
-  }
-  .articleItem{
-    display: flex;
-    justify-content: center;
-  }
-  p{
-    grid-area: 1, 1 / 3, 3;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: lightgray;
-    font-size: large;
-  }
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr ;}
+
+  .leftColumn {
+    grid-area: 1, 1 / 2, 2;}
+
+  .rightColumn{
+    grid-area: 1, 2 / 2, 3;}
+}
