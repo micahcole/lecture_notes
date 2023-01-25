@@ -64,7 +64,7 @@ This is an in-class build where we are creating a quick server that covers the C
 |x| Consider conditions |  |
 |x| Test Route |  |
 |x| Build POST One |  |
-| | Test Route |  |
+|x| Test Route |  |
 | | Build PUT One by ID |  |
 | | Test Route |  |
 | | Build DELETE One by ID | |
